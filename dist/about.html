@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+  <title>About Me</title>
+  <style>
+    #loader {
+        border: 12px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 12px solid #444444;
+        width: 70px;
+        height: 70px;
+        animation: spin 20s linear infinite;
+    }
+      
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+      
+    .center {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+</style>
+</head>
+
+<body>
+  <div id="loader" class="center"></div>
+  <header>
+
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            Home
+          </a>
+        </li>
+        <li class="nav-item current">
+          <a href="about.html" class="nav-link">
+            About Me
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link">
+            My Work
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">
+            How To Reach Me
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="about">
+
+    <h1 class="lg-heading">
+      About
+      <span class="text-secondary">Me</span>
+    </h1>
+    <h2 class="sm-heading">
+      Let me tell you a few things...
+    </h2>
+    <div class="about-info">
+      <img src="img/portrait1.jpeg" alt="John Doe" class="bio-image">
+
+      <div class="bio">
+        <h2 class="text-secondary">BIO</h2>
+          <h3 class="text-secondary"> <a href="#" class="Link"> < intro > </a></h3>
+          <p style="font-size:24px">I am Srinanda Pentapati, I am a Bachelor’s student in the Department of Computer Science at the SCSVMV University at Kanchipuram graduating in May 2022. I have completed my junior college at Tirumala Junior College at Katheru,Rajahmundry in 2018. I have completed my schooling at St.Ann's English Medium School in Rajahmundry in 2016.</p>
+        <h3 class="text-secondary"> <a href="#" class="Link"> < coder > </a></h3>
+          <p style="font-size:24px">I have taken a big interest in web-development recently, especially building responsive websites with WORDPRESS. I designed some websites with wordpress and also created some portfolios from gatsby. I have some other projects in the <a href="work.html" class="Link"><b>works</b></a> section, you can check it over there. Specifically, I have experience with( in order from most to least): HTML, CSS, WORDPRESS, JQUERY, JSON, JAVASCRIPT. </p>
+          
+      </div>
+      
+      <div class="job job-1">
+        <h3>Web-development</h3>
+        <h6>Wordpress Developer</h6>
+        <p>WordPress is known as a great blogging platform, but it’s developed since then and has become more accurate as a CMS rather than a simple website builder. You don't need any coding knowledge to build a wordpress website. You just need to apply all your creativity in wordpress with the help of widgets and plugins.</p>
+      </div>
+
+      <div class="job job-2">
+        <h3>Startup</h3>
+        <h6>EntrantX</h6>
+        <p>EntrantX is primarily a team of three dedicated members who has a clear vision on an all round development of thedifferent platforms in the current digital world. We believe in smart work rather than hard work. EntrantX provides best customer focused services built on latest technologies.<br> <a href="https://entrantx.tech/" target="_blank"onMouseOver="this.style.color='#242a56'"
+          onMouseOut="this.style.color='white'"><p style="text-align:center"><b>Click here to visit the website.</b></p></a></p>
+      </div>
+
+      <div class="job job-3">
+        <h3>Webworks</h3>
+        <h6>Front-End Developer</h6>
+        <p>A front-end web developer is responsible for implementing visual elements that users see and interact with in a web application. They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do.</p>
+      </div>
+
+      <div class="job job-4">
+        <h3>Webworks</h3>
+        <h6>Front-End Developer</h6>
+        <p>A front-end web developer is responsible for implementing visual elements that users see and interact with in a web application. They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do.</p>
+      </div>
+      <div class="job job-5">
+        <h3>Webworks</h3>
+        <h6>Front-End Developer</h6>
+        <p>A front-end web developer is responsible for implementing visual elements that users see and interact with in a web application. They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do.</p>
+      </div>
+      <div class="job job-6">
+        <h3>Webworks</h3>
+        <h6>Front-End Developer</h6>
+        <p>A front-end web developer is responsible for implementing visual elements that users see and interact with in a web application. They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do.</p>
+      </div>
+      
+    </div>
+
+  </main>
+
+  <footer id="main-footer">
+    Copyright &copy; 2021
+  </footer>
+  <script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+              "body").style.visibility = "hidden";
+            document.querySelector(
+              "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+              "#loader").style.display = "none";
+            document.querySelector(
+              "body").style.visibility = "visible";
+        }
+    };
+</script>
+  <script src="js/main.js"></script>
+  <script src="particles.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
