@@ -109,6 +109,24 @@ body#bg-img {
     background-attachment: fixed;
     background-size: cover; }   
 
+body#bg-img2{
+  background: url(../img/b1.jpg);
+  background: rgba(68, 68, 68, 0.9), url(../img/back.jpg);
+  background-attachment: fixed;
+  background-size: cover; 
+}
+body#bg-img4{
+  background: url(../img/contactpage.jpg);
+  background: rgba(68, 68, 68, 0.9), url(../img/back.jpg);
+  background-attachment: fixed;
+  background-size: cover; 
+}
+body#bg-img3{
+  background: url(../img/about.jpg);
+  background: rgba(68, 68, 68, 0.9), url(../img/back.jpg);
+  background-attachment: fixed;
+  background-size: cover; 
+}
 h1,
 h2,
 h3 {
@@ -173,7 +191,7 @@ main {
     grid-area: job3; }
     
   .about-info .job {
-    background: #515151;
+    background: rgba(0, 0, 0, 0.685);
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
 
@@ -234,11 +252,11 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -341,4 +359,3 @@ main {
       }
     }
     
-        
