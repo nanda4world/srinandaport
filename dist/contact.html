@@ -7,12 +7,60 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
+    <link href="css/elements.css" rel="stylesheet">
+<script src="js/my_js.js"></script>
     <link rel="stylesheet" href="css/pre.css">
     <link rel="icon" 
     type="image/png" 
     href="img/favicon.png" />
   <link rel="stylesheet" href="css/main.css">
   <title>Contact Me</title>
+  <style>
+        
+    .ft-modal {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+            z-index: 9999;	
+            overflow: auto;
+        position: fixed;
+            visibility: hidden;
+        margin-top: -250px;
+        background: rgba(0,0,0,.8);
+        
+        transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+    }
+    
+    .ft-modal:target {
+        opacity: 1;
+        margin-top: 0px;
+        visibility: visible;	
+    }
+    
+    .ft-modal-content {
+        width: 70%;
+        padding: 25px;
+        background: #FFF;
+        max-width: 600px;
+        margin: 70px auto;
+        position: relative;
+        border-radius: 8px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    /*
+    .ft-modal-close {
+        top: 9px;
+        right: 12px;
+        float: right;
+        position: absolute;
+    }
+    */
+        </style>
 </head>
 
 <body id="bg-img4">
@@ -68,12 +116,28 @@
         <span class="text-secondary">Email: </span> <a href="mailto:pensrinanda@gmail.com">pensrinanda@gmail.com</a>
       </div>
       <div>
-        <span class="text-secondary">Phone: </span> (555) 555-5555
-      </div>
-      <div>
-        <span class="text-secondary">Address: </span> 50 Main st Boston MA 02101
+        <span class="text-secondary">Fill: </span> <a href="#popup" onclick="div_show()">FORM</a>
       </div>
     </div>
+    <div id="abc">
+      <!-- Popup Div Starts Here -->
+      <div id="popupContact">
+      <!-- Contact Us Form -->
+      <form action="https://formspree.io/f/mzbyvdzn" id="form" method="post" name="form">
+      <img id="close" src="img/3.png" onclick ="div_hide()">
+      <h2 style="color: black;">Contact Us</h2>
+      <hr>
+      <input id="name" name="name" placeholder="Name" type="text">
+      <input id="email" name="email" placeholder="Email" type="text">
+      <textarea id="msg" name="message" placeholder="Message"></textarea>
+      <a href="javascript:%20check_empty()" id="submit">Send</a>
+      </form>
+      </div>
+      <!-- Popup Div Ends Here -->
+      </div>
+      <!-- Display Popup Button -->
+      
+    
   </main>
 
   <footer id="main-footer">
